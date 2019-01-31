@@ -3,7 +3,7 @@
 
 ## 简介
 
-***当您在 Sprint Boot 项目中使用 netty 承载 restful 服务时 spring-boot-netty-httprouter 可以使您不必再手动进行请求与业务处理的绑定，spring-boot-netty-httprouter 可以根据您设置的映射规则，自动分发请求到对应的 action。同时由于支持 Spring Boot 的自动配置，您在项目中只需添加对应的依赖之后，无需进行额外配置即可开始使用。***
+***当您在SprintBoot项目中使用netty承载restful服务时spring-boot-netty-httprouter可以使您不必再手动进行请求与业务处理的绑定，spring-boot-netty-httprouter可以根据您设置的映射规则，自动分发请求到对应的action。同时由于支持SpringBoot的自动配置，您在项目中只需添加对应的依赖之后，无需进行额外配置即可开始使用。***
 
 
 ## 环境说明
@@ -15,20 +15,20 @@
 
 - *common ： 为基础类库，目前只添加了少量的工具类*
 
-- *projects 下的 netty.httprouter ：为 netty httprouter 实现项目*
+- *projects下的netty.httprouter ：为nettyhttprouter实现项目*
 
-- *samples 下的 netty.httprouter ：为 netty httprouter 示例项目*
+- *samples下的netty.httprouter ：为nettyhttprouter示例项目*
 
 > ***注：运行示例项目前，仍需要先将项目 deploy 到您的 maven 私服。***
 
 
 ## 使用方式
 
-- *修改主项目中 pom 中的 distributionManagement 配置改为您自己的 maven 私服配置*
+- *修改主项目中pom中的distributionManagement配置改为您自己的maven私服配置*
 
-- *将整个项目 deploy 到您的 maven 私服*
+- *将整个项目deploy到您的maven私服*
 
-- *在您自己项目的 pom 文件中添加 erola-spring-boot-netty-httprouter 依赖即可使用*
+- *在您自己项目的pom文件中添加erola-spring-boot-netty-httprouter依赖即可使用*
   
 
 ## 路由匹配
