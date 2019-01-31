@@ -28,7 +28,7 @@
 
 - *将整个项目 deploy 到您的 maven 私服*
 
-- *在您自己项目的pom文件中添加 erola-spring-boot-netty-httprouter 依赖即可使用*
+- *在您自己项目的 pom 文件中添加 erola-spring-boot-netty-httprouter 依赖即可使用*
   
 
 ## 路由匹配
