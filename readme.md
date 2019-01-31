@@ -3,7 +3,7 @@
 
 ## 简介
 
-***当您在&nbsp;Sprint&nbsp;Boot&nbsp;项目中使用&nbsp;netty&nbsp;承载&nbsp;restful&nbsp;服务时 spring-boot-netty-httprouter 可以使您不必再手动进行请求与业务处理的绑定，spring-boot-netty-httprouter&nbsp;可以根据您设置的映射规则，自动分发请求到对应的&nbsp;action。同时由于支持&nbsp;Spring&nbsp;Boot&nbsp;的自动配置，您在项目中只需添加对应的依赖之后，无需进行额外配置即可开始使用。***
+***当您在 Sprint Boot 项目中使用 netty 承载 restful 服务时 spring-boot-netty-httprouter 可以使您不必再手动进行请求与业务处理的绑定，spring-boot-netty-httprouter 可以根据您设置的映射规则，自动分发请求到对应的 action。同时由于支持 Spring Boot 的自动配置，您在项目中只需添加对应的依赖之后，无需进行额外配置即可开始使用。***
 
 
 ## 环境说明
