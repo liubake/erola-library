@@ -1,0 +1,12 @@
+org:
+    erola:
+        spring:
+            boot:
+                netty:
+                    httprouter:
+                        #示例配置
+                        sample:
+                            #http监听端口
+                            httpPort: 6789
+                            #请求体的最大长度
+                            maxContentLength: 10240

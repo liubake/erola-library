@@ -1,0 +1,6 @@
+.idea/
+
+# Compile directories
+common/target/
+spring/boot/projects/netty/httprouer/target/
+spring/boot/samples/netty/httprouer/target/

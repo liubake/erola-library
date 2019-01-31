@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.erola.library</groupId>
+    <artifactId>erola-library-build</artifactId>
+    <version>1.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>erola library build</name>
+    <description>erola library</description>
+
+    <modules>
+        <module>common</module>
+        <module>spring/boot</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <netty.version>4.1.32.Final</netty.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+    </properties>
+
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>nexus-releases</id>-->
+            <!--<name>Nexus Release Repository</name>-->
+            <!--<url>http://x.x.x.x/repository/maven-releases/</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>nexus-snapshots</id>-->
+            <!--<name>Nexus Snapshot Repository</name>-->
+            <!--<url>http://x.x.x.x/repository/maven-snapshots/</url>-->
+        <!--</snapshotRepository>-->
+    <!--</distributionManagement>-->
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.7.0</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                        <encoding>${maven.compiler.encoding}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.0.1</version>
+                    <configuration>
+                        <attach>true</attach>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
